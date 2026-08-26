@@ -64,3 +64,21 @@ ai-business-analyser/
 |
 +-- .gitignore
 +-- README.md
+
+## Team Development
+
+Frontend Team
+    │
+    ├── Dashboard
+    ├── Charts
+    ├── Upload interface
+    ├── Reports
+    └── AI insights UI
+
+Backend / AI Team
+    │
+    ├── Data processing
+    ├── Business analysis
+    ├── Machine learning
+    ├── Groq integration
+    └── FastAPI
