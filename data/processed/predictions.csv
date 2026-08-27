@@ -1,0 +1,241 @@
+month,Product_Category,Region,actual,baseline_pred,xgb_pred
+2025-01-01,Clothing & Accessories,Asia Pacific,53.14,343.63,350.0239
+2025-02-01,Clothing & Accessories,Asia Pacific,423.92,53.14,351.48978
+2025-03-01,Clothing & Accessories,Asia Pacific,61.85,423.92,427.40002
+2025-04-01,Clothing & Accessories,Asia Pacific,1643.43,61.85,416.75375
+2025-05-01,Clothing & Accessories,Asia Pacific,147.53,1643.43,1137.2114
+2025-06-01,Clothing & Accessories,Asia Pacific,96.82,147.53,395.6591
+2025-07-01,Clothing & Accessories,Asia Pacific,732.12,96.82,425.38028
+2025-08-01,Clothing & Accessories,Asia Pacific,126.22,732.12,482.22784
+2025-09-01,Clothing & Accessories,Asia Pacific,123.14,126.22,323.83902
+2025-10-01,Clothing & Accessories,Asia Pacific,426.56,123.14,385.84714
+2025-11-01,Clothing & Accessories,Asia Pacific,1062.21,426.56,426.45053
+2025-12-01,Clothing & Accessories,Asia Pacific,778.83,1062.21,700.5162
+2025-01-01,Clothing & Accessories,Europe,911.18,599.81,175.6094
+2025-02-01,Clothing & Accessories,Europe,485.12,911.18,851.5071
+2025-03-01,Clothing & Accessories,Europe,132.02,485.12,621.1565
+2025-04-01,Clothing & Accessories,Europe,0.0,132.02,492.5613
+2025-05-01,Clothing & Accessories,Europe,598.63,0.0,414.2256
+2025-06-01,Clothing & Accessories,Europe,423.14,598.63,379.06674
+2025-07-01,Clothing & Accessories,Europe,1383.95,423.14,421.57346
+2025-08-01,Clothing & Accessories,Europe,1554.44,1383.95,1251.1409
+2025-09-01,Clothing & Accessories,Europe,429.03,1554.44,1026.939
+2025-10-01,Clothing & Accessories,Europe,599.0699999999999,429.03,971.6818
+2025-11-01,Clothing & Accessories,Europe,0.0,599.0699999999999,1035.3177
+2025-12-01,Clothing & Accessories,Europe,1375.01,0.0,305.96127
+2025-01-01,Clothing & Accessories,Middle East & Africa,0.0,220.36,217.56075
+2025-02-01,Clothing & Accessories,Middle East & Africa,0.0,0.0,315.61908
+2025-03-01,Clothing & Accessories,Middle East & Africa,0.0,0.0,297.7722
+2025-04-01,Clothing & Accessories,Middle East & Africa,329.91,0.0,303.94193
+2025-05-01,Clothing & Accessories,Middle East & Africa,56.7,329.91,390.91364
+2025-06-01,Clothing & Accessories,Middle East & Africa,204.72,56.7,313.45407
+2025-07-01,Clothing & Accessories,Middle East & Africa,138.21,204.72,381.13605
+2025-08-01,Clothing & Accessories,Middle East & Africa,338.72,138.21,352.68097
+2025-09-01,Clothing & Accessories,Middle East & Africa,231.54,338.72,365.3017
+2025-10-01,Clothing & Accessories,Middle East & Africa,0.0,231.54,316.1756
+2025-11-01,Clothing & Accessories,Middle East & Africa,200.61,0.0,328.22028
+2025-12-01,Clothing & Accessories,Middle East & Africa,121.12,200.61,334.40323
+2025-01-01,Clothing & Accessories,North America,203.63,929.74,558.90967
+2025-02-01,Clothing & Accessories,North America,320.74,203.63,561.3023
+2025-03-01,Clothing & Accessories,North America,860.0699999999999,320.74,529.02734
+2025-04-01,Clothing & Accessories,North America,77.03,860.0699999999999,464.25192
+2025-05-01,Clothing & Accessories,North America,806.47,77.03,540.90045
+2025-06-01,Clothing & Accessories,North America,492.35,806.47,560.997
+2025-07-01,Clothing & Accessories,North America,655.53,492.35,415.35144
+2025-08-01,Clothing & Accessories,North America,53.12,655.53,664.6117
+2025-09-01,Clothing & Accessories,North America,152.25,53.12,394.65994
+2025-10-01,Clothing & Accessories,North America,2662.89,152.25,421.1813
+2025-11-01,Clothing & Accessories,North America,0.0,2662.89,546.40967
+2025-12-01,Clothing & Accessories,North America,1061.12,0.0,1127.7156
+2025-01-01,Clothing & Accessories,South America,0.0,0.0,209.17767
+2025-02-01,Clothing & Accessories,South America,0.0,0.0,249.10446
+2025-03-01,Clothing & Accessories,South America,158.63,0.0,271.85876
+2025-04-01,Clothing & Accessories,South America,18.14,158.63,251.14464
+2025-05-01,Clothing & Accessories,South America,272.37,18.14,268.2732
+2025-06-01,Clothing & Accessories,South America,0.0,272.37,344.5221
+2025-07-01,Clothing & Accessories,South America,0.0,0.0,191.95827
+2025-08-01,Clothing & Accessories,South America,0.0,0.0,203.73712
+2025-09-01,Clothing & Accessories,South America,0.0,0.0,254.49307
+2025-10-01,Clothing & Accessories,South America,34.47,0.0,251.77223
+2025-11-01,Clothing & Accessories,South America,878.05,34.47,252.7969
+2025-12-01,Clothing & Accessories,South America,73.25,878.05,299.0268
+2025-01-01,Furniture,Asia Pacific,818.61,1667.44,2145.461
+2025-02-01,Furniture,Asia Pacific,0.0,818.61,1952.5847
+2025-03-01,Furniture,Asia Pacific,1310.21,0.0,1073.7456
+2025-04-01,Furniture,Asia Pacific,884.1600000000001,1310.21,1613.7268
+2025-05-01,Furniture,Asia Pacific,4707.99,884.1600000000001,2026.0577
+2025-06-01,Furniture,Asia Pacific,1246.55,4707.99,949.6979
+2025-07-01,Furniture,Asia Pacific,1698.42,1246.55,2265.789
+2025-08-01,Furniture,Asia Pacific,404.57,1698.42,1645.7617
+2025-09-01,Furniture,Asia Pacific,2358.39,404.57,1895.1418
+2025-10-01,Furniture,Asia Pacific,1496.77,2358.39,1746.4222
+2025-11-01,Furniture,Asia Pacific,1354.51,1496.77,2855.6282
+2025-12-01,Furniture,Asia Pacific,3098.87,1354.51,2722.9624
+2025-01-01,Furniture,Europe,2146.35,3205.3900000000003,582.69147
+2025-02-01,Furniture,Europe,455.94,2146.35,1501.9537
+2025-03-01,Furniture,Europe,1467.71,455.94,2221.3208
+2025-04-01,Furniture,Europe,3337.31,1467.71,1523.2678
+2025-05-01,Furniture,Europe,4824.52,3337.31,1270.082
+2025-06-01,Furniture,Europe,2670.72,4824.52,905.7932
+2025-07-01,Furniture,Europe,4425.33,2670.72,1060.8392
+2025-08-01,Furniture,Europe,378.73,4425.33,1055.3966
+2025-09-01,Furniture,Europe,3618.11,378.73,1515.0422
+2025-10-01,Furniture,Europe,2901.77,3618.11,2016.6465
+2025-11-01,Furniture,Europe,6022.43,2901.77,1987.4016
+2025-12-01,Furniture,Europe,2753.13,6022.43,1968.8685
+2025-01-01,Furniture,Middle East & Africa,1117.68,321.71,490.55606
+2025-02-01,Furniture,Middle East & Africa,0.0,1117.68,622.6412
+2025-03-01,Furniture,Middle East & Africa,418.59,0.0,771.5108
+2025-04-01,Furniture,Middle East & Africa,0.0,418.59,1042.3696
+2025-05-01,Furniture,Middle East & Africa,460.13,0.0,578.2934
+2025-06-01,Furniture,Middle East & Africa,0.0,460.13,554.0829
+2025-07-01,Furniture,Middle East & Africa,432.8,0.0,664.841
+2025-08-01,Furniture,Middle East & Africa,377.92,432.8,586.4852
+2025-09-01,Furniture,Middle East & Africa,718.45,377.92,969.989
+2025-10-01,Furniture,Middle East & Africa,515.39,718.45,1146.4596
+2025-11-01,Furniture,Middle East & Africa,0.0,515.39,1043.6609
+2025-12-01,Furniture,Middle East & Africa,920.72,0.0,1466.1272
+2025-01-01,Furniture,North America,3246.02,3575.3700000000003,1636.4929
+2025-02-01,Furniture,North America,915.54,3246.02,1808.6907
+2025-03-01,Furniture,North America,0.0,915.54,2996.7373
+2025-04-01,Furniture,North America,3814.24,0.0,1845.4048
+2025-05-01,Furniture,North America,1637.48,3814.24,1743.7634
+2025-06-01,Furniture,North America,7334.84,1637.48,2972.9712
+2025-07-01,Furniture,North America,1632.53,7334.84,809.02673
+2025-08-01,Furniture,North America,1722.89,1632.53,2283.6707
+2025-09-01,Furniture,North America,1263.49,1722.89,2007.22
+2025-10-01,Furniture,North America,1540.2800000000002,1263.49,3183.1777
+2025-11-01,Furniture,North America,471.83,1540.2800000000002,2387.5378
+2025-12-01,Furniture,North America,0.0,471.83,2043.8864
+2025-01-01,Furniture,South America,0.0,1038.67,2111.585
+2025-02-01,Furniture,South America,0.0,0.0,1228.862
+2025-03-01,Furniture,South America,0.0,0.0,750.1126
+2025-04-01,Furniture,South America,505.47,0.0,481.53583
+2025-05-01,Furniture,South America,0.0,505.47,820.6197
+2025-06-01,Furniture,South America,0.0,0.0,783.6878
+2025-07-01,Furniture,South America,970.84,0.0,507.33847
+2025-08-01,Furniture,South America,0.0,970.84,1833.511
+2025-09-01,Furniture,South America,599.91,0.0,990.0124
+2025-10-01,Furniture,South America,0.0,599.91,1263.1576
+2025-11-01,Furniture,South America,356.1,0.0,876.29895
+2025-12-01,Furniture,South America,718.33,356.1,563.4196
+2025-01-01,Office Supplies,Asia Pacific,129.09,266.09000000000003,164.49548
+2025-02-01,Office Supplies,Asia Pacific,17.740000000000002,129.09,143.15068
+2025-03-01,Office Supplies,Asia Pacific,174.1,17.740000000000002,160.95021
+2025-04-01,Office Supplies,Asia Pacific,307.46,174.1,177.54192
+2025-05-01,Office Supplies,Asia Pacific,563.0,307.46,192.62563
+2025-06-01,Office Supplies,Asia Pacific,134.89999999999998,563.0,185.04613
+2025-07-01,Office Supplies,Asia Pacific,262.3,134.89999999999998,156.7293
+2025-08-01,Office Supplies,Asia Pacific,69.86,262.3,214.36375
+2025-09-01,Office Supplies,Asia Pacific,119.36,69.86,121.7348
+2025-10-01,Office Supplies,Asia Pacific,131.89,119.36,173.88107
+2025-11-01,Office Supplies,Asia Pacific,191.68,131.89,146.7558
+2025-12-01,Office Supplies,Asia Pacific,363.37,191.68,172.63968
+2025-01-01,Office Supplies,Europe,63.39,33.63,56.715797
+2025-02-01,Office Supplies,Europe,12.93,63.39,104.80404
+2025-03-01,Office Supplies,Europe,154.62,12.93,106.16142
+2025-04-01,Office Supplies,Europe,121.03,154.62,149.93254
+2025-05-01,Office Supplies,Europe,65.59,121.03,122.13872
+2025-06-01,Office Supplies,Europe,185.45,65.59,120.996086
+2025-07-01,Office Supplies,Europe,146.95,185.45,213.58707
+2025-08-01,Office Supplies,Europe,42.69,146.95,180.14369
+2025-09-01,Office Supplies,Europe,251.19,42.69,162.78522
+2025-10-01,Office Supplies,Europe,229.9,251.19,240.21777
+2025-11-01,Office Supplies,Europe,119.3,229.9,210.90472
+2025-12-01,Office Supplies,Europe,22.64,119.3,154.01459
+2025-01-01,Office Supplies,Middle East & Africa,0.0,128.97,15.345789
+2025-02-01,Office Supplies,Middle East & Africa,95.61,0.0,142.11613
+2025-03-01,Office Supplies,Middle East & Africa,0.0,95.61,87.34564
+2025-04-01,Office Supplies,Middle East & Africa,267.5,0.0,107.33803
+2025-05-01,Office Supplies,Middle East & Africa,45.49,267.5,174.7609
+2025-06-01,Office Supplies,Middle East & Africa,73.72,45.49,118.10303
+2025-07-01,Office Supplies,Middle East & Africa,0.0,73.72,143.77344
+2025-08-01,Office Supplies,Middle East & Africa,14.45,0.0,73.80546
+2025-09-01,Office Supplies,Middle East & Africa,68.1,14.45,44.617584
+2025-10-01,Office Supplies,Middle East & Africa,45.29,68.1,67.115845
+2025-11-01,Office Supplies,Middle East & Africa,0.0,45.29,71.71384
+2025-12-01,Office Supplies,Middle East & Africa,23.87,0.0,63.310776
+2025-01-01,Office Supplies,North America,159.0,159.96,228.324
+2025-02-01,Office Supplies,North America,87.76,159.0,221.89801
+2025-03-01,Office Supplies,North America,198.5,87.76,232.5458
+2025-04-01,Office Supplies,North America,67.25,198.5,249.63316
+2025-05-01,Office Supplies,North America,100.75,67.25,226.46416
+2025-06-01,Office Supplies,North America,71.58,100.75,229.35034
+2025-07-01,Office Supplies,North America,11.55,71.58,213.45908
+2025-08-01,Office Supplies,North America,27.0,11.55,224.77477
+2025-09-01,Office Supplies,North America,133.01,27.0,198.69815
+2025-10-01,Office Supplies,North America,119.52,133.01,225.80382
+2025-11-01,Office Supplies,North America,226.63,119.52,202.84767
+2025-12-01,Office Supplies,North America,160.18,226.63,226.78192
+2025-01-01,Office Supplies,South America,31.64,91.37,86.164055
+2025-02-01,Office Supplies,South America,0.0,31.64,110.46383
+2025-03-01,Office Supplies,South America,0.0,0.0,114.319496
+2025-04-01,Office Supplies,South America,32.52,0.0,56.66042
+2025-05-01,Office Supplies,South America,164.72,32.52,38.687702
+2025-06-01,Office Supplies,South America,0.0,164.72,82.76399
+2025-07-01,Office Supplies,South America,60.28,0.0,27.850956
+2025-08-01,Office Supplies,South America,8.78,60.28,56.210964
+2025-09-01,Office Supplies,South America,132.92,8.78,96.34092
+2025-10-01,Office Supplies,South America,23.380000000000003,132.92,81.67972
+2025-11-01,Office Supplies,South America,177.76,23.380000000000003,52.60372
+2025-12-01,Office Supplies,South America,22.39,177.76,79.72481
+2025-01-01,Technology,Asia Pacific,462.51,382.03,888.49677
+2025-02-01,Technology,Asia Pacific,2408.08,462.51,452.42712
+2025-03-01,Technology,Asia Pacific,0.0,2408.08,469.63077
+2025-04-01,Technology,Asia Pacific,778.61,0.0,992.6968
+2025-05-01,Technology,Asia Pacific,450.29,778.61,940.74066
+2025-06-01,Technology,Asia Pacific,3383.84,450.29,460.89807
+2025-07-01,Technology,Asia Pacific,373.68,3383.84,1176.9668
+2025-08-01,Technology,Asia Pacific,256.09,373.68,1132.6315
+2025-09-01,Technology,Asia Pacific,434.87,256.09,1223.6461
+2025-10-01,Technology,Asia Pacific,2408.64,434.87,540.891
+2025-11-01,Technology,Asia Pacific,1027.74,2408.64,798.3538
+2025-12-01,Technology,Asia Pacific,493.17,1027.74,1419.973
+2025-01-01,Technology,Europe,197.61,429.35,619.28674
+2025-02-01,Technology,Europe,241.89,197.61,564.45447
+2025-03-01,Technology,Europe,333.78,241.89,569.69946
+2025-04-01,Technology,Europe,1162.31,333.78,574.36084
+2025-05-01,Technology,Europe,414.58,1162.31,1000.82275
+2025-06-01,Technology,Europe,446.55,414.58,660.8996
+2025-07-01,Technology,Europe,40.3,446.55,859.7889
+2025-08-01,Technology,Europe,4162.360000000001,40.3,450.13385
+2025-09-01,Technology,Europe,976.39,4162.360000000001,686.85864
+2025-10-01,Technology,Europe,1248.1,976.39,1652.2085
+2025-11-01,Technology,Europe,2041.27,1248.1,1397.9874
+2025-12-01,Technology,Europe,477.83,2041.27,655.4925
+2025-01-01,Technology,Middle East & Africa,338.6,207.84,401.28284
+2025-02-01,Technology,Middle East & Africa,0.0,338.6,493.529
+2025-03-01,Technology,Middle East & Africa,1001.53,0.0,516.48553
+2025-04-01,Technology,Middle East & Africa,1174.42,1001.53,793.0669
+2025-05-01,Technology,Middle East & Africa,1181.51,1174.42,852.1674
+2025-06-01,Technology,Middle East & Africa,194.81,1181.51,623.18866
+2025-07-01,Technology,Middle East & Africa,516.19,194.81,329.41113
+2025-08-01,Technology,Middle East & Africa,109.42,516.19,275.63763
+2025-09-01,Technology,Middle East & Africa,926.64,109.42,768.479
+2025-10-01,Technology,Middle East & Africa,474.69999999999993,926.64,272.59882
+2025-11-01,Technology,Middle East & Africa,289.64,474.69999999999993,89.31631
+2025-12-01,Technology,Middle East & Africa,580.73,289.64,80.55581
+2025-01-01,Technology,North America,1914.07,687.44,596.78204
+2025-02-01,Technology,North America,499.87,1914.07,1057.6577
+2025-03-01,Technology,North America,1116.32,499.87,829.9649
+2025-04-01,Technology,North America,1384.98,1116.32,667.2609
+2025-05-01,Technology,North America,1013.82,1384.98,990.8069
+2025-06-01,Technology,North America,200.18,1013.82,910.1795
+2025-07-01,Technology,North America,1008.48,200.18,1203.1133
+2025-08-01,Technology,North America,197.28,1008.48,1385.1152
+2025-09-01,Technology,North America,1839.16,197.28,814.8399
+2025-10-01,Technology,North America,916.05,1839.16,852.1054
+2025-11-01,Technology,North America,361.26,916.05,1091.825
+2025-12-01,Technology,North America,996.53,361.26,956.24976
+2025-01-01,Technology,South America,528.66,375.54,400.3649
+2025-02-01,Technology,South America,1372.14,528.66,174.12344
+2025-03-01,Technology,South America,384.4,1372.14,657.4518
+2025-04-01,Technology,South America,497.83,384.4,511.8951
+2025-05-01,Technology,South America,110.23,497.83,247.68224
+2025-06-01,Technology,South America,907.92,110.23,257.95905
+2025-07-01,Technology,South America,576.5,907.92,583.1825
+2025-08-01,Technology,South America,1457.57,576.5,563.34576
+2025-09-01,Technology,South America,0.0,1457.57,507.36386
+2025-10-01,Technology,South America,100.08,0.0,406.66965
+2025-11-01,Technology,South America,0.0,100.08,310.50665
+2025-12-01,Technology,South America,0.0,0.0,520.8462

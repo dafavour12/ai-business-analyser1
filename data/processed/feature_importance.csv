@@ -1,0 +1,18 @@
+,0
+cat_Furniture,0.25198787
+reg_Middle East & Africa,0.07743034
+roll_mean_3,0.072288744
+cat_Clothing & Accessories,0.06891123
+reg_South America,0.068573095
+reg_Europe,0.062251803
+quarter,0.05291769
+lag_1,0.050794445
+cat_Technology,0.048525102
+lag_2,0.04447302
+roll_std_3,0.036690753
+reg_North America,0.034139767
+time_idx,0.032455146
+cat_Office Supplies,0.030860271
+month_num,0.029884622
+reg_Asia Pacific,0.019416863
+year,0.018399248

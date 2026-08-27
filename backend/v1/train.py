@@ -27,7 +27,7 @@ import numpy as np
 from xgboost import XGBRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-df = pd.read_csv('/home/claude/pipeline/features.csv', parse_dates=['month'])
+df = pd.read_csv('../data/processed/features.csv', parse_dates=['month'])
 
 # Features we're ALLOWED to use (known before the month happens)
 leaky_cols = ['order_count', 'avg_unit_price', 'avg_discount', 'total_quantity']
@@ -89,7 +89,7 @@ test_out['Region'] = df.loc[test.index, [c for c in df.columns if c.startswith('
 test_out['actual'] = y_test.values
 test_out['baseline_pred'] = baseline_pred.values
 test_out['xgb_pred'] = xgb_pred
-test_out.to_csv('/home/claude/pipeline/predictions.csv', index=False)
+test_out.to_csv('../data/processed/predictions.csv', index=False)
 print("\nSaved -> predictions.csv")
 
-importances.to_csv('/home/claude/pipeline/feature_importance.csv')
+importances.to_csv('../data/processed/feature_importance.csv')

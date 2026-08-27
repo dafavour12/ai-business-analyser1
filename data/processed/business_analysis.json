@@ -1,0 +1,470 @@
+{
+    "basic_summary": {
+        "total_sales": 484559.34,
+        "total_orders": 2000,
+        "months_analyzed": 36,
+        "average_monthly_sales": 13459.98
+    },
+    "category_analysis": {
+        "ranking": [
+            {
+                "Product_Category": "Furniture",
+                "total_sales": 256274.68,
+                "total_orders": 507,
+                "average_order_value": 505.47
+            },
+            {
+                "Product_Category": "Technology",
+                "total_sales": 139518.22,
+                "total_orders": 567,
+                "average_order_value": 246.06
+            },
+            {
+                "Product_Category": "Clothing & Accessories",
+                "total_sales": 69375.63,
+                "total_orders": 413,
+                "average_order_value": 167.98
+            },
+            {
+                "Product_Category": "Office Supplies",
+                "total_sales": 19390.81,
+                "total_orders": 513,
+                "average_order_value": 37.8
+            }
+        ],
+        "best_category": {
+            "Product_Category": "Furniture",
+            "total_sales": 256274.68,
+            "total_orders": 507,
+            "average_order_value": 505.47
+        },
+        "worst_category": {
+            "Product_Category": "Office Supplies",
+            "total_sales": 19390.81,
+            "total_orders": 513,
+            "average_order_value": 37.8
+        }
+    },
+    "region_analysis": {
+        "ranking": [
+            {
+                "Region": "Europe",
+                "total_sales": 137006.2,
+                "total_orders": 503,
+                "average_order_value": 272.38
+            },
+            {
+                "Region": "North America",
+                "total_sales": 133876.38,
+                "total_orders": 578,
+                "average_order_value": 231.62
+            },
+            {
+                "Region": "Asia Pacific",
+                "total_sales": 121707.51,
+                "total_orders": 520,
+                "average_order_value": 234.05
+            },
+            {
+                "Region": "South America",
+                "total_sales": 46051.13,
+                "total_orders": 191,
+                "average_order_value": 241.11
+            },
+            {
+                "Region": "Middle East & Africa",
+                "total_sales": 45918.12,
+                "total_orders": 208,
+                "average_order_value": 220.76
+            }
+        ],
+        "best_region": {
+            "Region": "Europe",
+            "total_sales": 137006.2,
+            "total_orders": 503,
+            "average_order_value": 272.38
+        },
+        "worst_region": {
+            "Region": "Middle East & Africa",
+            "total_sales": 45918.12,
+            "total_orders": 208,
+            "average_order_value": 220.76
+        }
+    },
+    "monthly_trend": [
+        {
+            "month": "2023-01",
+            "total_sales": 11275.2,
+            "total_orders": 47
+        },
+        {
+            "month": "2023-02",
+            "total_sales": 16943.67,
+            "total_orders": 52
+        },
+        {
+            "month": "2023-03",
+            "total_sales": 16056.45,
+            "total_orders": 51
+        },
+        {
+            "month": "2023-04",
+            "total_sales": 12185.0,
+            "total_orders": 48
+        },
+        {
+            "month": "2023-05",
+            "total_sales": 8218.47,
+            "total_orders": 40
+        },
+        {
+            "month": "2023-06",
+            "total_sales": 16191.61,
+            "total_orders": 59
+        },
+        {
+            "month": "2023-07",
+            "total_sales": 15667.73,
+            "total_orders": 59
+        },
+        {
+            "month": "2023-08",
+            "total_sales": 12971.07,
+            "total_orders": 69
+        },
+        {
+            "month": "2023-09",
+            "total_sales": 11989.72,
+            "total_orders": 58
+        },
+        {
+            "month": "2023-10",
+            "total_sales": 17794.6,
+            "total_orders": 63
+        },
+        {
+            "month": "2023-11",
+            "total_sales": 8475.49,
+            "total_orders": 46
+        },
+        {
+            "month": "2023-12",
+            "total_sales": 16674.44,
+            "total_orders": 78
+        },
+        {
+            "month": "2024-01",
+            "total_sales": 8015.21,
+            "total_orders": 48
+        },
+        {
+            "month": "2024-02",
+            "total_sales": 11979.6,
+            "total_orders": 36
+        },
+        {
+            "month": "2024-03",
+            "total_sales": 10550.11,
+            "total_orders": 44
+        },
+        {
+            "month": "2024-04",
+            "total_sales": 15615.06,
+            "total_orders": 68
+        },
+        {
+            "month": "2024-05",
+            "total_sales": 16594.2,
+            "total_orders": 63
+        },
+        {
+            "month": "2024-06",
+            "total_sales": 9435.15,
+            "total_orders": 44
+        },
+        {
+            "month": "2024-07",
+            "total_sales": 14937.53,
+            "total_orders": 50
+        },
+        {
+            "month": "2024-08",
+            "total_sales": 9883.83,
+            "total_orders": 53
+        },
+        {
+            "month": "2024-09",
+            "total_sales": 9636.38,
+            "total_orders": 60
+        },
+        {
+            "month": "2024-10",
+            "total_sales": 17426.05,
+            "total_orders": 76
+        },
+        {
+            "month": "2024-11",
+            "total_sales": 16413.27,
+            "total_orders": 58
+        },
+        {
+            "month": "2024-12",
+            "total_sales": 14664.34,
+            "total_orders": 49
+        },
+        {
+            "month": "2025-01",
+            "total_sales": 12321.18,
+            "total_orders": 43
+        },
+        {
+            "month": "2025-02",
+            "total_sales": 7337.28,
+            "total_orders": 40
+        },
+        {
+            "month": "2025-03",
+            "total_sales": 7772.33,
+            "total_orders": 48
+        },
+        {
+            "month": "2025-04",
+            "total_sales": 16403.6,
+            "total_orders": 66
+        },
+        {
+            "month": "2025-05",
+            "total_sales": 17621.8,
+            "total_orders": 71
+        },
+        {
+            "month": "2025-06",
+            "total_sales": 18068.09,
+            "total_orders": 64
+        },
+        {
+            "month": "2025-07",
+            "total_sales": 15065.96,
+            "total_orders": 61
+        },
+        {
+            "month": "2025-08",
+            "total_sales": 11302.11,
+            "total_orders": 40
+        },
+        {
+            "month": "2025-09",
+            "total_sales": 14375.95,
+            "total_orders": 60
+        },
+        {
+            "month": "2025-10",
+            "total_sales": 15874.75,
+            "total_orders": 66
+        },
+        {
+            "month": "2025-11",
+            "total_sales": 14781.02,
+            "total_orders": 58
+        },
+        {
+            "month": "2025-12",
+            "total_sales": 14041.09,
+            "total_orders": 64
+        }
+    ],
+    "sales_spikes": [
+        {
+            "month": "2024-07",
+            "Product_Category": "Furniture",
+            "Region": "Europe",
+            "total_sales": 7692.67,
+            "order_count": 4
+        },
+        {
+            "month": "2025-06",
+            "Product_Category": "Furniture",
+            "Region": "North America",
+            "total_sales": 7334.84,
+            "order_count": 10
+        },
+        {
+            "month": "2025-11",
+            "Product_Category": "Furniture",
+            "Region": "Europe",
+            "total_sales": 6022.43,
+            "order_count": 9
+        },
+        {
+            "month": "2023-02",
+            "Product_Category": "Furniture",
+            "Region": "North America",
+            "total_sales": 5300.34,
+            "order_count": 5
+        },
+        {
+            "month": "2023-03",
+            "Product_Category": "Furniture",
+            "Region": "Asia Pacific",
+            "total_sales": 4841.03,
+            "order_count": 4
+        },
+        {
+            "month": "2025-05",
+            "Product_Category": "Furniture",
+            "Region": "Europe",
+            "total_sales": 4824.52,
+            "order_count": 8
+        },
+        {
+            "month": "2025-05",
+            "Product_Category": "Furniture",
+            "Region": "Asia Pacific",
+            "total_sales": 4707.99,
+            "order_count": 6
+        },
+        {
+            "month": "2024-11",
+            "Product_Category": "Furniture",
+            "Region": "Asia Pacific",
+            "total_sales": 4632.52,
+            "order_count": 6
+        },
+        {
+            "month": "2023-07",
+            "Product_Category": "Furniture",
+            "Region": "Asia Pacific",
+            "total_sales": 4568.56,
+            "order_count": 5
+        },
+        {
+            "month": "2023-10",
+            "Product_Category": "Furniture",
+            "Region": "Europe",
+            "total_sales": 4541.85,
+            "order_count": 3
+        }
+    ],
+    "category_region_analysis": [
+        {
+            "Product_Category": "Furniture",
+            "Region": "Europe",
+            "total_sales": 77277.4,
+            "total_orders": 135
+        },
+        {
+            "Product_Category": "Furniture",
+            "Region": "North America",
+            "total_sales": 73499.85,
+            "total_orders": 140
+        },
+        {
+            "Product_Category": "Furniture",
+            "Region": "Asia Pacific",
+            "total_sales": 63448.33,
+            "total_orders": 131
+        },
+        {
+            "Product_Category": "Technology",
+            "Region": "Europe",
+            "total_sales": 36887.08,
+            "total_orders": 146
+        },
+        {
+            "Product_Category": "Technology",
+            "Region": "North America",
+            "total_sales": 36414.82,
+            "total_orders": 158
+        },
+        {
+            "Product_Category": "Technology",
+            "Region": "Asia Pacific",
+            "total_sales": 34990.88,
+            "total_orders": 140
+        },
+        {
+            "Product_Category": "Furniture",
+            "Region": "Middle East & Africa",
+            "total_sales": 21475.34,
+            "total_orders": 58
+        },
+        {
+            "Product_Category": "Furniture",
+            "Region": "South America",
+            "total_sales": 20573.76,
+            "total_orders": 43
+        },
+        {
+            "Product_Category": "Clothing & Accessories",
+            "Region": "Europe",
+            "total_sales": 19138.88,
+            "total_orders": 115
+        },
+        {
+            "Product_Category": "Clothing & Accessories",
+            "Region": "North America",
+            "total_sales": 18124.54,
+            "total_orders": 119
+        },
+        {
+            "Product_Category": "Clothing & Accessories",
+            "Region": "Asia Pacific",
+            "total_sales": 17185.71,
+            "total_orders": 101
+        },
+        {
+            "Product_Category": "Technology",
+            "Region": "South America",
+            "total_sales": 15739.77,
+            "total_orders": 59
+        },
+        {
+            "Product_Category": "Technology",
+            "Region": "Middle East & Africa",
+            "total_sales": 15485.67,
+            "total_orders": 64
+        },
+        {
+            "Product_Category": "Clothing & Accessories",
+            "Region": "South America",
+            "total_sales": 7764.79,
+            "total_orders": 39
+        },
+        {
+            "Product_Category": "Clothing & Accessories",
+            "Region": "Middle East & Africa",
+            "total_sales": 7161.71,
+            "total_orders": 39
+        },
+        {
+            "Product_Category": "Office Supplies",
+            "Region": "Asia Pacific",
+            "total_sales": 6082.59,
+            "total_orders": 148
+        },
+        {
+            "Product_Category": "Office Supplies",
+            "Region": "North America",
+            "total_sales": 5837.17,
+            "total_orders": 161
+        },
+        {
+            "Product_Category": "Office Supplies",
+            "Region": "Europe",
+            "total_sales": 3702.84,
+            "total_orders": 107
+        },
+        {
+            "Product_Category": "Office Supplies",
+            "Region": "South America",
+            "total_sales": 1972.81,
+            "total_orders": 50
+        },
+        {
+            "Product_Category": "Office Supplies",
+            "Region": "Middle East & Africa",
+            "total_sales": 1795.4,
+            "total_orders": 47
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+,0
+roll_mean_12,0.1647022
+roll_mean_6,0.111415125
+reg_North America,0.073683664
+roll_std_12,0.058565665
+roll_max_3,0.057527937
+roll_mean_3,0.057166684
+reg_Asia Pacific,0.05322504
+roll_std_3,0.04321846
+lag_6,0.040380668
+lag_3,0.039255366
+lag_2,0.036984462
+lag_1,0.03468546
+lag_12,0.034025367
+quarter,0.03062747
+month_num,0.025094947
+cat_Technology,0.022237785
+roll_std_6,0.022015724
+cat_Furniture,0.02129555
+cat_Clothing & Accessories,0.018283257
+roll_max_6,0.015951859
+reg_South America,0.014146335
+reg_Europe,0.011267156
+reg_Middle East & Africa,0.0077463724
+time_idx,0.00649742
+year,0.0
+cat_Office Supplies,0.0
