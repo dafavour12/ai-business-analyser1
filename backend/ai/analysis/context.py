@@ -8,6 +8,12 @@ DATA_DIR = BASE_DIR / "data" / "processed"
 
 
 def load_business_context():
+    """
+    Load the existing processed business context.
+
+    Used for development/testing with the project's
+    preprocessed dataset.
+    """
 
     business_file = DATA_DIR / "business_analysis.json"
 
@@ -42,8 +48,27 @@ def load_business_context():
         "region_evaluation": region_eval.to_dict(orient="records"),
         "largest_errors": largest_errors.to_dict(orient="records"),
     }
-    
-    
+
+
+def build_business_context(df: pd.DataFrame):
+    """
+    Build business context from a user's uploaded CSV.
+
+    The uploaded CSV should contain raw ecommerce/sales data.
+    """
+
+    # We will implement the actual processing here next.
+
+    return {
+        "business_summary": {},
+        "monthly_sales": [],
+        "predictions": [],
+        "category_evaluation": [],
+        "region_evaluation": [],
+        "largest_errors": [],
+    }
+
+
 if __name__ == "__main__":
     context = load_business_context()
 

@@ -1,7 +1,7 @@
-from .context import load_business_context
-from .selector import select_context
-from .facts import calculate_facts
-from .prompt import build_analysis_prompt
+from ..context import load_business_context
+from ..selector import select_context
+from ..facts import calculate_facts
+from ..prompt import build_analysis_prompt
 
 
 def main():
