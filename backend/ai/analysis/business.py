@@ -277,9 +277,16 @@ def analyze_category_region(df):
 # COMPLETE ANALYSIS
 # ============================================================
 
-def generate_analysis():
+def generate_analysis(df):
 
-    df = load_data()
+    if df.empty:
+        raise ValueError(
+            "Monthly aggregated data is empty."
+        )
+
+    df = df.copy()
+
+    df["month"] = pd.to_datetime(df["month"])
 
     analysis = {
 
@@ -334,7 +341,9 @@ if __name__ == "__main__":
     print("BUSINESS ANALYSIS")
     print("=" * 60)
 
-    analysis = generate_analysis()
+    df = load_data()
+
+    analysis = generate_analysis(df)
 
     save_analysis(analysis)
 

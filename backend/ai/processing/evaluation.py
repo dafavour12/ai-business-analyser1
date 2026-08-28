@@ -1,3 +1,0 @@
-def evaluate_predictions(predictions):
-    ...
-    return evaluations

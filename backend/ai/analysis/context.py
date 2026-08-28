@@ -50,22 +50,36 @@ def load_business_context():
     }
 
 
-def build_business_context(df: pd.DataFrame):
+def build_business_context(
+    df: pd.DataFrame,
+    monthly: pd.DataFrame,
+    features: pd.DataFrame,
+    predictions
+):
     """
-    Build business context from a user's uploaded CSV.
-
-    The uploaded CSV should contain raw ecommerce/sales data.
+    Build business context from the current uploaded dataset.
     """
-
-    # We will implement the actual processing here next.
 
     return {
-        "business_summary": {},
-        "monthly_sales": [],
-        "predictions": [],
+        "business_summary": {
+            "raw_rows": len(df),
+            "monthly_rows": len(monthly),
+            "feature_rows": len(features),
+        },
+
+        "monthly_sales": monthly.to_dict(
+            orient="records"
+        ),
+
+        "predictions": predictions.tolist()
+        if hasattr(predictions, "tolist")
+        else predictions,
+
         "category_evaluation": [],
+
         "region_evaluation": [],
-        "largest_errors": [],
+
+        "largest_errors": []
     }
 
 

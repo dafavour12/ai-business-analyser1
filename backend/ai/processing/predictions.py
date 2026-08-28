@@ -1,3 +1,0 @@
-def generate_predictions(features):
-    ...
-    return predictions

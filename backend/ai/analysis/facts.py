@@ -35,8 +35,10 @@ def calculate_facts(context: Dict[str, Any]) -> Dict[str, Any]:
     # CATEGORY FACTS
     # ============================================================
 
-    best_category = summary.get("best_category")
-    worst_category = summary.get("worst_category")
+    category_analysis = summary.get("category_analysis", {})
+
+    best_category = category_analysis.get("best_category")
+    worst_category = category_analysis.get("worst_category")
 
     if best_category:
         category_sales = best_category.get("total_sales", 0)
@@ -80,8 +82,10 @@ def calculate_facts(context: Dict[str, Any]) -> Dict[str, Any]:
     # REGION FACTS
     # ============================================================
 
-    best_region = summary.get("best_region")
-    worst_region = summary.get("worst_region")
+    region_analysis = summary.get("region_analysis", {})
+
+    best_region = region_analysis.get("best_region")
+    worst_region = region_analysis.get("worst_region")
 
     if best_region:
         region_sales = best_region.get("total_sales", 0)
