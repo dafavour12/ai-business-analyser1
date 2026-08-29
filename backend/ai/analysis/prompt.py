@@ -5,87 +5,120 @@ def build_analysis_prompt(facts, context):
     """
     Build a grounded business-analysis prompt.
 
-    facts:
-        Verified/calculated business facts.
-
-    context:
-        Relevant supporting business data selected for the analysis.
+    VERIFIED FACTS are the source of truth.
+    RELEVANT DATA provides supporting evidence.
     """
+
+    facts_json = json.dumps(
+        facts,
+        indent=2,
+        default=str
+    )
+
+    context_json = json.dumps(
+        context,
+        indent=2,
+        default=str
+    )
 
     return f"""
 You are an AI business analyst.
 
-Your job is to analyze business data and provide accurate,
-evidence-based insights for a business owner.
+Analyze the provided business data and produce a concise,
+accurate, evidence-based report for a business owner.
 
 ============================================================
 STRICT DATA RULES
 ============================================================
 
 1. VERIFIED FACTS are the primary source of truth.
-2. Use ONLY the data provided in VERIFIED FACTS and RELEVANT DATA.
-3. Never invent numbers, categories, regions, dates, or trends.
-4. Never change or reinterpret a verified number.
-5. Do not mix data from different categories or regions.
-6. Do not treat predictions as actual historical sales.
-7. Clearly identify XGBoost predictions as predictions.
-8. Never confuse baseline predictions with XGBoost predictions.
-9. Do not calculate a new business fact when the verified fact is
-   already provided.
-10. If the available data is insufficient to answer something,
-    explicitly say so.
-11. Every important business claim must be supported by the data.
-12. Keep the analysis concise and useful.
+2. Use only VERIFIED FACTS and RELEVANT BUSINESS DATA.
+3. Never invent numbers, categories, regions, dates, trends,
+   profits, or business facts.
+4. Never modify or contradict a verified number.
+5. Do not treat predictions as historical actuals.
+6. Clearly distinguish XGBoost predictions from actual sales.
+7. Do not confuse baseline predictions with XGBoost predictions.
+8. Do not claim profitability unless profit data is provided.
+9. Do not claim causation when the data only shows correlation
+   or a pattern.
+10. If the data is insufficient to support a claim, say so.
+11. Every important claim must be supported by the supplied data.
+12. Do not use outside business data or assumptions.
 
 ============================================================
 VERIFIED FACTS
 ============================================================
 
-These facts have already been calculated and verified by the
-business analysis system.
-
-{json.dumps(facts, indent=2, default=str)}
+{facts_json}
 
 ============================================================
 RELEVANT BUSINESS DATA
 ============================================================
 
-The following data provides supporting evidence for the verified facts.
-
-{json.dumps(context, indent=2, default=str)}
+{context_json}
 
 ============================================================
-ANALYSIS INSTRUCTIONS
+ANALYSIS TASK
 ============================================================
 
-Produce a business analysis containing:
+Produce the following JSON structure:
 
-1. Executive Summary
-2. Sales Performance
-3. Category Performance
-4. Regional Performance
-5. Forecast / Prediction Performance
-6. Major Business Risks
-7. Important Sales Patterns
-8. Recommended Business Actions
+{{
+  "executive_summary": {{
+    "overview": "...",
+    "modeling": "...",
+    "forecast_accuracy": "..."
+  }},
 
-IMPORTANT:
+  "sales_performance": {{
+    "total_sales": 0,
+    "total_orders": 0,
+    "average_monthly_sales": 0,
+    "average_order_value": 0
+  }},
 
-- Use verified facts whenever available.
-- Do not invent missing information.
-- Distinguish actual sales from predicted sales.
-- Distinguish XGBoost predictions from baseline predictions.
-- Do not claim that something is profitable unless profit data
-  actually supports that claim.
-- Do not call a category or region "best" unless the provided
-  data identifies it as such.
-- If there is insufficient evidence, say so.
+  "category_performance": {{
+    "best_category": {{}},
+    "worst_category": {{}},
+    "model_evaluation": []
+  }},
+
+  "regional_performance": {{
+    "best_region": {{}},
+    "worst_region": {{}},
+    "model_evaluation": []
+  }},
+
+  "forecast_performance": {{
+    "prediction_records": 0,
+    "largest_absolute_error": 0,
+    "average_absolute_error": 0
+  }},
+
+  "risks": [],
+
+  "sales_patterns": [],
+
+  "recommended_actions": []
+}}
 
 ============================================================
-FINAL REQUIREMENT
+OUTPUT RULES
 ============================================================
 
-The provided data is the ONLY source of truth.
+Return ONLY valid JSON.
 
-Do not use outside knowledge to create business facts.
+Do not wrap the JSON in markdown code fences.
+
+Do not include explanations before or after the JSON.
+
+Use numbers as numbers, not strings.
+
+Do not create fields that are unsupported by the supplied data.
+
+Remember:
+
+The provided VERIFIED FACTS and RELEVANT BUSINESS DATA
+are the ONLY source of truth.
 """

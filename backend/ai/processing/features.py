@@ -141,9 +141,17 @@ def create_features(df: pd.DataFrame) -> pd.DataFrame:
         ).max()
     )
 
-    # ============================================================
-    # CATEGORICAL ENCODING
-    # ============================================================
+# ============================================================
+# PRESERVE BUSINESS IDENTIFIERS
+# ============================================================
+
+    df["prediction_category"] = df["Product_Category"]
+    df["prediction_region"] = df["Region"]
+
+
+# ============================================================
+# CATEGORICAL ENCODING
+# ============================================================
 
     df = pd.get_dummies(
         df,
@@ -151,12 +159,11 @@ def create_features(df: pd.DataFrame) -> pd.DataFrame:
             "Product_Category",
             "Region"
         ],
-        prefix=[
+    prefix=[
             "cat",
             "reg"
         ]
     )
-
     # ============================================================
     # REMOVE ROWS WITHOUT REQUIRED HISTORY
     # ============================================================

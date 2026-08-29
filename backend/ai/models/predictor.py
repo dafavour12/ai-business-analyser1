@@ -1,50 +1,11 @@
-from pathlib import Path
-
-import pandas as pd
 import numpy as np
+import pandas as pd
 from xgboost import XGBRegressor
 
-
-BASE_DIR = Path(__file__).resolve().parents[3]
-
-MODEL_FILE = (
-    BASE_DIR
-    / "data"
-    / "models"
-    / "xgboost_v3.json"
-)
+from ai.models.config import MODEL_FILE, FEATURE_COLUMNS
 
 
-FEATURE_COLUMNS = [
-    "month_num",
-    "quarter",
-    "year",
-    "time_idx",
-    "lag_1",
-    "lag_2",
-    "lag_3",
-    "lag_6",
-    "lag_12",
-    "roll_mean_3",
-    "roll_std_3",
-    "roll_mean_6",
-    "roll_std_6",
-    "roll_mean_12",
-    "roll_std_12",
-    "roll_max_3",
-    "roll_max_6",
-    "cat_Clothing & Accessories",
-    "cat_Furniture",
-    "cat_Office Supplies",
-    "cat_Technology",
-    "reg_Asia Pacific",
-    "reg_Europe",
-    "reg_Middle East & Africa",
-    "reg_North America",
-    "reg_South America",
-]
 model = XGBRegressor()
-
 model.load_model(MODEL_FILE)
 
 
@@ -61,8 +22,10 @@ def predict_sales(features: pd.DataFrame):
             f"Missing model features: {missing}"
         )
 
+    # Features used by XGBoost
     X = features[FEATURE_COLUMNS]
 
+    # Generate predictions
     predictions = model.predict(X)
 
     predictions = np.clip(
@@ -71,4 +34,40 @@ def predict_sales(features: pd.DataFrame):
         None
     )
 
-    return predictions
+    # --------------------------------------------------
+    # BUILD STRUCTURED PREDICTIONS
+    # --------------------------------------------------
+
+    results = features[
+        [
+            "month",
+            "prediction_category",
+            "prediction_region",
+            "total_sales"
+        ]
+    ].copy()
+
+    results["xgb_prediction"] = predictions
+
+    results["xgb_error"] = (
+        results["xgb_prediction"]
+        - results["total_sales"]
+    )
+
+    # Rename identifiers
+    results = results.rename(
+        columns={
+            "prediction_category":
+                "Product_Category",
+
+            "prediction_region":
+                "Region",
+
+            "total_sales":
+                "actual_sales"
+        }
+    )
+
+    return results.to_dict(
+        orient="records"
+    )

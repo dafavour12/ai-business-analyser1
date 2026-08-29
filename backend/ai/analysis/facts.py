@@ -23,22 +23,27 @@ def calculate_facts(context: Dict[str, Any]) -> Dict[str, Any]:
     total_orders = basic.get("total_orders", 0)
     months_analyzed = basic.get("months_analyzed", 0)
     average_monthly_sales = basic.get("average_monthly_sales", 0)
+    average_order_value = (
+        total_sales / total_orders
+        if total_orders
+        else 0
+        )
 
     facts["business"] = {
         "total_sales": round(total_sales, 2),
         "total_orders": total_orders,
         "months_analyzed": months_analyzed,
         "average_monthly_sales": round(average_monthly_sales, 2),
+        "average_order_value": round(average_order_value, 2),
+
     }
 
     # ============================================================
     # CATEGORY FACTS
     # ============================================================
-
-    category_analysis = summary.get("category_analysis", {})
-
-    best_category = category_analysis.get("best_category")
-    worst_category = category_analysis.get("worst_category")
+    
+    best_category = summary.get("best_category")
+    worst_category = summary.get("worst_category")
 
     if best_category:
         category_sales = best_category.get("total_sales", 0)
@@ -82,10 +87,10 @@ def calculate_facts(context: Dict[str, Any]) -> Dict[str, Any]:
     # REGION FACTS
     # ============================================================
 
-    region_analysis = summary.get("region_analysis", {})
+    # region_analysis = summary.get("region_analysis", {})
 
-    best_region = region_analysis.get("best_region")
-    worst_region = region_analysis.get("worst_region")
+    best_region = summary.get("best_region")
+    worst_region = summary.get("worst_region")
 
     if best_region:
         region_sales = best_region.get("total_sales", 0)
@@ -128,6 +133,16 @@ def calculate_facts(context: Dict[str, Any]) -> Dict[str, Any]:
     # ============================================================
     # PREDICTION FACTS
     # ============================================================
+    
+    predictions = context.get("predictions", [])
+
+    print("\nDEBUG PREDICTIONS")
+    print("Type:", type(predictions))
+    print("Length:", len(predictions))
+
+    if predictions:
+        print("First item type:", type(predictions[0]))
+        print("First item:", predictions[0])
 
     predictions = context.get("predictions", [])
 
@@ -154,37 +169,48 @@ def calculate_facts(context: Dict[str, Any]) -> Dict[str, Any]:
     category_evaluation = context.get("category_evaluation", [])
 
     if category_evaluation:
-        row = category_evaluation[0]
+        
+        facts["category_model_evaluation"] = []
 
-        facts["category_model_evaluation"] = {
-            "category": row.get("Product_Category"),
-            "baseline_mae": round(
-                float(row.get("Baseline_MAE", 0)), 2
-            ),
-            "xgboost_mae": round(
-                float(row.get("XGBoost_MAE", 0)), 2
-            ),
-            "improvement_percent": round(
-                float(row.get("Improvement_%", 0)), 2
-            ),
-        }
+        for row in category_evaluation:
 
+            facts["category_model_evaluation"].append({
+                "category": row.get("Product_Category"),
+
+                "baseline_mae": round(
+                    float(row.get("Baseline_MAE", 0)), 2
+                ),
+
+                "xgboost_mae": round(
+                    float(row.get("XGBoost_MAE", 0)), 2
+                ),
+
+                "improvement_percent": round(
+                    float(row.get("Improvement_%", 0)), 2
+                ),
+            })
     region_evaluation = context.get("region_evaluation", [])
 
     if region_evaluation:
-        row = region_evaluation[0]
+        
+        facts["region_model_evaluation"] = []
+        
+        for row in region_evaluation:
 
-        facts["region_model_evaluation"] = {
-            "region": row.get("Region"),
-            "baseline_mae": round(
-                float(row.get("Baseline_MAE", 0)), 2
-            ),
-            "xgboost_mae": round(
-                float(row.get("XGBoost_MAE", 0)), 2
-            ),
-            "improvement_percent": round(
-                float(row.get("Improvement_%", 0)), 2
-            ),
-        }
+            facts["region_model_evaluation"].append({
+                
+                "region": row.get("Region"),
+                
+                "baseline_mae": round(
+                    float(row.get("Baseline_MAE", 0)), 2
+                ),
+                
+                "xgboost_mae": round(
+                    float(row.get("XGBoost_MAE", 0)), 2
+                ),
+                "improvement_percent": round(
+                    float(row.get("Improvement_%", 0)), 2
+                ),
+            }) 
 
     return facts

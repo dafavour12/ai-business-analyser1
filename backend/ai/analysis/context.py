@@ -1,7 +1,14 @@
 from pathlib import Path
 import pandas as pd
 import json
-
+from ai.analysis.business import (
+    get_basic_summary,
+    analyze_categories,
+    analyze_regions,
+    analyze_monthly_trend,
+    analyze_spikes,
+    analyze_category_region,
+)
 
 BASE_DIR = Path(__file__).resolve().parents[3]
 DATA_DIR = BASE_DIR / "data" / "processed"
@@ -60,20 +67,34 @@ def build_business_context(
     Build business context from the current uploaded dataset.
     """
 
+    # --------------------------------------------------
+    # BUSINESS ANALYSIS
+    # --------------------------------------------------
+
+    business_summary = {
+        "basic_summary": get_basic_summary(monthly),
+        "category_analysis": analyze_categories(monthly),
+        "region_analysis": analyze_regions(monthly),
+        "monthly_trend": analyze_monthly_trend(monthly),
+        "sales_spikes": analyze_spikes(monthly),
+        "category_region_analysis": analyze_category_region(monthly),
+    }
+
+    # --------------------------------------------------
+    # PREDICTIONS
+    # --------------------------------------------------
+
+    if hasattr(predictions, "tolist"):
+        predictions = predictions.tolist()
+
     return {
-        "business_summary": {
-            "raw_rows": len(df),
-            "monthly_rows": len(monthly),
-            "feature_rows": len(features),
-        },
+        "business_summary": business_summary,
 
         "monthly_sales": monthly.to_dict(
             orient="records"
         ),
 
-        "predictions": predictions.tolist()
-        if hasattr(predictions, "tolist")
-        else predictions,
+        "predictions": predictions,
 
         "category_evaluation": [],
 
